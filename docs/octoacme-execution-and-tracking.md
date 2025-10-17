@@ -1,5 +1,7 @@
 # OctoAcme — Execution & Tracking
 
+**Updated:** Added references to QA Lead, Release Manager, Technical Writer; linked to new QA and Release checklist documents
+
 ## Purpose
 Guidance for managing day-to-day execution and tracking progress toward project milestones.
 
@@ -17,11 +19,13 @@ Guidance for managing day-to-day execution and tracking progress toward project 
   - Require at least one approval before merging (or team-defined policy)
 
 ## Quality & Testing
-- Unit tests for new logic
-- Integration tests where applicable
-- End-to-end smoke tests for critical flows before release
+- Unit tests for new logic (owned by [Developers](octoacme-roles-and-personas.md#developers))
+- Integration tests where applicable (owned by [Developers](octoacme-roles-and-personas.md#developers))
+- End-to-end smoke tests for critical flows before release (coordinated by [QA Lead](octoacme-roles-and-personas.md#qa-lead))
 - Security scanning in CI
-- Manual QA for feature acceptance when needed
+- Manual QA for feature acceptance when needed (executed by [QA Lead](octoacme-roles-and-personas.md#qa-lead))
+
+For detailed QA processes, test types, and signoff criteria, see [OctoAcme QA & Testing Guide](octoacme-qa-and-testing.md).
 
 ## Reporting & Metrics
 - Track velocity and burndown
@@ -29,9 +33,11 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 - Use dashboards for key signals (errors, latency, usage)
 
 ## Blocker Escalation
-- Level 1: Team-level triage in daily standup
-- Level 2: PM escalates to Product Lead and dependent teams
-- Level 3: Sponsor-level escalation for business-impacting issues
+- Level 1: Team-level triage in daily standup ([Developers](octoacme-roles-and-personas.md#developers), [QA Lead](octoacme-roles-and-personas.md#qa-lead))
+- Level 2: [Project Manager](octoacme-roles-and-personas.md#project-managers) escalates to [Product Manager](octoacme-roles-and-personas.md#product-managers) and dependent teams
+- Level 3: Sponsor-level escalation for business-impacting issues (coordinated by [Project Manager](octoacme-roles-and-personas.md#project-managers))
+
+For release-specific blockers, see [Release Readiness Checklist](octoacme-release-checklist.md).
 
 ## Execution Checklist
 - [ ] Branching and PR conventions documented in repo
